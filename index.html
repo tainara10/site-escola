@@ -15,10 +15,14 @@ nav h1 {
 
 .container {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
+.item {
+  flex-basis: 100%;
+}
+  
 img {
   width: 310px;
   height: 250px;
@@ -45,9 +49,9 @@ p {
 </nav>
 <div class="container">
 <img src="image.png" alt="School">
-<h1>Colégio Estadual Francisco Ramos</h1>
-<h3>-Quem somos?</h3>
-<p>  Somos uma instituição de ensino
+<h1 class="item">Colégio Estadual Francisco Ramos</h1>
+<h3 class="item">-Quem somos?</h3>
+<p class="item">  Somos uma instituição de ensino
  público, que atua a muitos anos 
 auxiliando pessoas a realizar sonhos.
   Nos dedicamos cada vez mais para dar
